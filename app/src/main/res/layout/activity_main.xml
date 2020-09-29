@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#2E2D32">
 
     <Button
         android:id="@+id/button1"
@@ -39,17 +40,17 @@
         android:text="2"
         tools:layout_editor_absoluteX="112dp"
         tools:layout_editor_absoluteY="437dp"
-        app:layout_constraintBottom_toTopOf="@+id/button."
+        app:layout_constraintBottom_toTopOf="@+id/buttond"
         app:layout_constraintTop_toBottomOf="@+id/button5"
         app:layout_constraintStart_toEndOf="@+id/button1"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         />
 
     <Button
-        android:id="@+id/button."
+        android:id="@+id/buttond"
         android:layout_width="99dp"
         android:layout_height="73dp"
-        android:text="."
+        android:text="CLR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttoneq"
         app:layout_constraintStart_toEndOf="@+id/button0"
@@ -64,7 +65,7 @@
         tools:layout_editor_absoluteY="525dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintStart_toEndOf="@+id/button."
+        app:layout_constraintStart_toEndOf="@+id/buttond"
         app:layout_constraintEnd_toStartOf="@+id/buttonpl"
         />
 
@@ -161,16 +162,15 @@
 
     <TextView
         android:id="@+id/Input"
-        android:layout_width="410dp"
-        android:layout_height="100dp"
-        android:background="#27242C"
-        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#050505"
+        android:text="0"
         android:textColor="#FFFFFFFF"
-        android:textSize="30sp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/Output"
-        app:layout_constraintTop_toBottomOf="parent"
-        android:layout_marginTop="0dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -211,13 +211,13 @@
 
     <TextView
         android:id="@+id/Output"
-        android:layout_width="410dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="60dp"
-        android:background="#2A2A2C"
-        android:text="TextView"
+        android:layout_marginTop="0dp"
+        android:background="#1D1D1E"
+        android:text="0"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -233,5 +233,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button."/>
+        app:layout_constraintEnd_toStartOf="@+id/buttond"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
