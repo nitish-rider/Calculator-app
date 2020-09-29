@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView op;
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,bp,bdi,bmi,bmu,beq,bcl;
     String exp ="";
-    Evaluate_exp e;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"1";
+                exp=exp.concat("1");
                 inp.setText(exp);
             }
         });
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         bp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"+";
+                exp=exp.concat("+");
                 inp.setText(exp);
             }
         });
@@ -146,10 +146,12 @@ public class MainActivity extends AppCompatActivity {
         beq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int s=e.evaluate(exp);
+                /*Evaluate_exp e=new Evaluate_exp();
+                int t=e.evaluate(exp);
                 exp="";
-                exp=exp+s;
-                op.setText(s);
+                exp=String.valueOf(t);
+                */
+                op.setText(exp);
             }
         });
 
