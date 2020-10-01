@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+
+
+public class MainActivity extends AppCompatActivity{
 
     TextView inp;
     TextView op;
@@ -41,117 +43,118 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp.concat("1");
+                exp=exp.concat("1 ");
                 inp.setText(exp);
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"2";
+                exp=exp+"2 ";
                 inp.setText(exp);
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"3";
+                exp=exp+"3 ";
                 inp.setText(exp);
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"4";
+                exp=exp+"4 ";
                 inp.setText(exp);
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"5";
+                exp=exp+"5 ";
                 inp.setText(exp);
             }
         });
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"6";
+                exp=exp+"6 ";
                 inp.setText(exp);
             }
         });
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"7";
+                exp=exp+"7 ";
                 inp.setText(exp);
             }
         });
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"8";
+                exp=exp+"8 ";
                 inp.setText(exp);
             }
         });
         b9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"9";
+                exp=exp+"9 ";
                 inp.setText(exp);
             }
         });
         b0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"0";
+                exp=exp+"0 ";
                 inp.setText(exp);
             }
         });
         bp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp.concat("+");
+                exp=exp.concat("+ ");
                 inp.setText(exp);
             }
         });
         bdi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"/";
+                exp=exp+"/ ";
                 inp.setText(exp);
             }
         });
         bmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"-";
+                exp=exp+"- ";
                 inp.setText(exp);
             }
         });
         bmu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp=exp+"*";
+                exp=exp+"* ";
                 inp.setText(exp);
             }
         });
         bcl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exp="0";
+                exp="0 ";
                 inp.setText(exp);
+                op.setText(exp);
+                exp="";
             }
         });
         beq.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                /*Evaluate_exp e=new Evaluate_exp();
-                int t=e.evaluate(exp);
+            public void onClick(View view){
+                EvaluateString evaluateString = new EvaluateString();
+                int t=evaluateString.evaluate(exp);
+                String s= String.valueOf(t);
                 exp="";
-                exp=String.valueOf(t);
-                */
-                op.setText(exp);
+                op.setText(s);
             }
         });
 

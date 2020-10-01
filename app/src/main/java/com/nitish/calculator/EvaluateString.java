@@ -2,7 +2,7 @@ package com.nitish.calculator;
 
 import java.util.Stack;
 
-public class Evaluate_exp {
+public class EvaluateString {
     public static int evaluate(String expression)
     {
         char[] tokens = expression.toCharArray();
@@ -97,6 +97,4 @@ public class Evaluate_exp {
         }
         return 0;
     }
-
-
 }
